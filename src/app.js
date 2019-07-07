@@ -78,6 +78,7 @@ const forecaste = require('./utils/forecast')
 console.log(path.join(__dirname, '../public'))
 //console.log(__filename);
 var app = express();
+const port = process.env.PORT||4000;
 
 
 //defining paths for Express config
@@ -210,6 +211,6 @@ app.get('*', (req, res) => {
 
     })
 })
-app.listen(4000, () => {
-    console.log('server is running on 4000')
+app.listen(port, () => {
+    console.log('server is running on '+port)
 })
