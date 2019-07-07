@@ -78,6 +78,8 @@ const forecaste = require('./utils/forecast')
 console.log(path.join(__dirname, '../public'))
 //console.log(__filename);
 var app = express();
+
+
 //defining paths for Express config
 const publicDirectotyPath = path.join(__dirname, '../public');
 
@@ -209,5 +211,5 @@ app.get('*', (req, res) => {
     })
 })
 app.listen(4000, () => {
-    console.log('server is runningon 4000')
+    console.log('server is running on 4000')
 })
